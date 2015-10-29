@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>accordion</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li class="accordion">Product
+		<ul>
+			<li><a href="#">Product</a></li>
+			<li><a href="#">Product</a></li>
+			<li><a href="#">Product</a></li>
+			<li><a href="#">Product</a></li>
+		</ul></li>
+		<li class="accordion">Contact
+		<ul>
+			<li><a href="#">Office</a></li>
+			<li><a href="#">Mail</a></li>
+		</ul>
+		</li>
+	</ul>
+	<script type="text/javascript">
+
+	window.onload = function() {
+
+	var link = [].slice.call(document.querySelectorAll("li.accordion"));
+	link.forEach(function(e,i,a){
+		e.addEventListener("click", function(event){
+			var target = event.target;
+			target.classList.toggle('active');
+		});
+	});
+};
+
+	</script>
+</body>
+</html>

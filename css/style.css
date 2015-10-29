@@ -1,0 +1,26 @@
+ul{
+	width: 100px;
+    list-style: none;
+    padding-left: 0px;
+}
+.accordion > ul > li{
+	background-color: #49505a;
+    list-style: none;
+    box-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+.accordion > ul > li > a{
+	color: #fff;
+}
+.accordion > * {
+	display: none;
+}
+a{
+	text-decoration: none;
+}
+li{
+	background-color: #3ab4a6;
+    list-style: none;
+}
+.accordion.active > *{
+	display: block;
+}
